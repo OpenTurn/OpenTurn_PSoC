@@ -10,7 +10,7 @@
     <versions>
       <version flow_version="2.0" tools_min_version="2.2.0" req_capabilities_per_version="bsp_gen2">
         <num>Latest 1.X release</num>
-        <commit>app_mtb2-OpenTurn-project_1_0</commit>
+        <commit>APP_OpenTurn_project_1_0</commit>
       </version>
     </versions>
   </app> 
@@ -25,39 +25,9 @@
     <versions>
       <version flow_version="2.0" tools_min_version="2.2.0" req_capabilities_per_version="bsp_gen2">
         <num>Latest 1.X release</num>
-        <commit>app_mtb2-OpenTurn-selftest_1_0</commit>
+        <commit>APP_OpenTurn_selftest_1_0</commit>
       </version>
     </versions>
   </app>  
   
-  <app keywords="psoc6, openturn">
-    <name>OpenTurn DualCore Empty Project</name>
-    <id>mtb2-OpenTurn-dualcore-empty-template</id>
-	<category>OpenTurn</category>
-    <uri>https://github.com/OpenTurn/OpenTurn_PSoC</uri>
-    <description>This is the latest OpenTurn DualCore Template .</description>
-    <req_capabilities>openturn</req_capabilities>
-    <versions>
-      <version flow_version="2.0" tools_min_version="2.2.0" req_capabilities_per_version="bsp_gen2">
-        <num>Latest 1.X release</num>
-        <commit>app_mtb2-OpenTurn-dualcore-empty-template_1_0</commit>
-      </version>
-    </versions>
-  </app>  
-  
-  <app keywords="psoc6, openturn">
-    <name>OpenTurn SingleCore Empty Project</name>
-    <id>mtb2-OpenTurn-singlecore-empty-template</id>
-	<category>OpenTurn</category>
-    <uri>https://github.com/OpenTurn/OpenTurn_PSoC</uri>
-    <description>This is the latest OpenTurn SingleCore Template .</description>
-    <req_capabilities>openturn</req_capabilities>
-    <versions>
-      <version flow_version="2.0" tools_min_version="2.2.0" req_capabilities_per_version="bsp_gen2">
-        <num>Latest 1.X release</num>
-        <commit>app_mtb2-OpenTurn-singlecore-empty-template_1_0</commit>
-      </version>
-    </versions>
-  </app> 
-
 </apps>
