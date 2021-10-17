@@ -3,7 +3,7 @@
     <id>TARGET_OpenTurn</id>
     <versions>
       <version>
-        <commit>TARGET_OpenTurn_1_0</commit>
+        <commit>BSP_1_0</commit>
         <dependees>
           <dependee>
             <id>core-lib</id>
