@@ -24,7 +24,7 @@
     <versions>
       <version tools_min_version="2.2.0" flow_version="1.0,2.0" prov_capabilities_per_version="bsp_gen2">
         <num>Latest 1.X release</num>
-        <commit>TARGET_OpenTurn_1_0</commit>
+        <commit>BSP_1_0</commit>
       </version>
     </versions>
   </board>
