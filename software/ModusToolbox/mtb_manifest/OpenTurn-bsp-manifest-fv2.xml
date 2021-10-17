@@ -20,7 +20,7 @@
         <li>CAN-FD interface</li>
         </ul>
       ]]></description>
-    <documentation_url>https://github.com/OpenTurn/OpenTurn_PSoC/documentation</documentation_url>
+    <documentation_url>https://github.com/OpenTurn/OpenTurn_PSoC/tree/master/documentation</documentation_url>
     <versions>
       <version tools_min_version="2.2.0" flow_version="1.0,2.0" prov_capabilities_per_version="bsp_gen2">
         <num>Latest 1.X release</num>

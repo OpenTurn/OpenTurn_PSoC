@@ -6,6 +6,6 @@
 
 ```
     # This points to the OpenTurn ModusToolbox sources
-    https://raw.githubusercontent.com/OpenTurn/OpenTurn_PSoC/main/software/mtb_manifest/OpenTurn-super-manifest-fv2.xml
+    https://raw.githubusercontent.com/OpenTurn/OpenTurn_PSoC/main/software/ModusToolbox/mtb_manifest/OpenTurn-super-manifest-fv2.xml
 ```
 3. In Modus Toolbox "Create new Project" should now display the target "OpenTurn"
