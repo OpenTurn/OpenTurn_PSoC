@@ -1,0 +1,24 @@
+XT30: 
+	footprint - KiCAD
+	3d modell - https://grabcad.com/library/amass-xt30pw-m-_-pcb-solder-1
+
+XT60: 
+	footprint - https://hackaday.io/page/6674-amass-xt60pw-m-combination-footprint
+	3d modell - https://www.snapeda.com/parts/XT60PW-M%20/AMASS/view-part/?welcome=home
+	
+Crystal:
+	footprint - KiCAD
+	3d modell - https://www.snapeda.com/parts/ABM3X-102-32.000MHZ-T/Abracon/view-part/?ref=abracon_in&t=crystal%202.5x2.0&con_ref=None
+	
+DRV8323:
+	footprint - KiCAD
+	3d modell - https://www.snapeda.com/parts/DRV8323SRTAT/Texas%20Instruments/view-part/?ref=texas_in&t=drv8323&con_ref=None
+	
+Elec_16x17.5:
+	footprint - KiCAD
+	3d modell - https://www.snapeda.com/parts/AMK325ABJ107MMHP/Taiyo%20Yuden/view-part/1795243/?ref=search&t=C%201210%20100uF
+	
+2x5 1.27mm JTAG:
+	footprint - KiCAD
+	3d modell - https://grabcad.com/library/jtag-connector-1-27mm-2x5-1
+
