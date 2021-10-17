@@ -1,0 +1,35 @@
+<middleware>
+
+  <middleware>
+    <name>IFX_6EDL7141</name>
+    <id>mw_IFX_6EDL7141</id>
+    <uri>https://github.com/OpenTurn/OpenTurn_PSoC</uri>
+    <desc>FW driver for Infineon 6EDL7141 3 phase smart gate driver.</desc>
+    <category>OpenTurn</category>
+    <req_capabilities>psoc6</req_capabilities>
+    <versions>
+      <version flow_version="1.0,2.0" tools_min_version="2.2.0">
+        <num>Latest 1.X release</num>
+        <commit>mw_IFX_6EDL7141_1_0</commit>
+        <desc>initial release</desc>
+      </version>
+    </versions>
+  </middleware>
+  
+  <middleware>
+    <name>IFX_TLE5012</name>
+    <id>mw_IFX_TLE5012</id>
+    <uri>https://github.com/OpenTurn/OpenTurn_PSoC</uri>
+    <desc>FW driver for Infineon TLE5012 hall angle sensor .</desc>
+    <category>OpenTurn</category>
+    <req_capabilities>psoc6</req_capabilities>
+    <versions>
+      <version flow_version="1.0,2.0" tools_min_version="2.2.0">
+        <num>Latest 1.X release</num>
+        <commit>mw_IFX_TLE5012_1_0</commit>
+        <desc>initial release</desc>
+      </version>
+    </versions>
+  </middleware>
+  
+</middleware>
