@@ -1,0 +1,20 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TCAN337G_copy
+D High-Speed CAN Transceiver with CAN FD, 5Mbps, 3.3V supply, silent mode, fault output, SOT-23-8/SOIC-8
+K High-Speed CAN Transceiver
+F http://www.ti.com/lit/ds/symlink/tcan337.pdf
+$ENDCMP
+#
+$CMP TI_TCAN337G
+D High-Speed CAN Transceiver, 1Mbps, 3.3V supply, silent mode, fault output, SOT-23-8/SOIC-8
+K High-Speed CAN Transceiver
+F http://www.ti.com/lit/ds/symlink/tcan337.pdf
+$ENDCMP
+#
+$CMP TLE5012B_E1000
+D TLE5012B E1000
+F http://www.infineon.com/dgdl/TLE5012B_FDS_Rev1+1.pdf?folderId=db3a30431ce5fb52011d3dd6e8012582&fileId=db3a304334fac4c601350f31c43c433f
+$ENDCMP
+#
+#End Doc Library
