@@ -1,0 +1,146 @@
+(version 1)
+
+
+
+
+
+#============================================
+#JLCPCB Design Rules 
+# - 4 Layer PCB
+# - 1oz copper
+#============================================
+
+#--------------------------------------------
+# drill/hole size
+#--------------------------------------------
+(rule "Min Drill Hole Size Mechanical"  
+    (constraint hole (min 0.5mm))
+    (condition "A.Pad_Type == 'NPTH, mechanical'"))
+
+(rule "Max Drill Hole Size Mechanical"  
+    (constraint hole (max 6.3mm))
+    (condition "A.Pad_Type == 'NPTH, mechanical'"))
+
+(rule "Min Drill Hole Size PTH"  
+    (constraint hole (min 0.2mm))
+    (condition "A.Pad_Type == 'Through-hole'"))
+
+(rule "Max Drill Hole Size PTH"  
+    (constraint hole (max 6.35mm))
+    (condition "A.Pad_Type == 'Through-hole'"))
+
+(rule "Min Via Hole Size"  
+    (constraint hole (min 0.2mm))
+    (condition "A.Type ==  'Via'"))
+
+
+#Annular Ring
+(rule "Min Annular Ring Size PTH"  
+    (constraint annular_width (min 0.13mm))
+    (condition "A.Pad_Type != 'Through-hole'"))
+
+(rule "Min Annular Ring Size PTH"  
+    (constraint annular_width (min 0.3mm))
+    (condition "A.Pad_Type == 'Through-hole'"))
+
+
+#--------------------------------------------
+# Clearance
+#--------------------------------------------
+(rule "Clearance between Holes of Different Nets"  
+    (constraint clearance (min 0.5mm))
+    (condition "A.Type =='Hole' && B.Type =='Hole' && A.Net != B.Net"))
+
+(rule "Clearance between Vias of Same Nets"  
+    (constraint clearance (min 0.254mm))
+    (condition "A.Type =='Via' && B.Type =='Via' && A.Net == B.Net"))
+
+(rule "Clearance between Pads of Different Nets"  
+    (constraint clearance (min 0.127mm))
+    (condition "A.Type =='Pad' && B.Type =='Pad' && A.Net != B.Net && A.Pad_Type == 'SMD' && B.Pad_Type == 'SMD'"))
+
+(rule "Via Hole to Track Clearance"  
+    (constraint hole_clearance (min 0.254mm))
+    (condition "A.Type =='Via' && B.Type =='Track'"))
+
+(rule "PTH to Track Clearance"  
+    (constraint hole_clearance (min 0.33mm))
+    (condition "A.Type =='Pad' && B.Type =='Track' && A.Pad_Type == 'Through-hole'"))
+
+(rule "NPTH to Track Clearance"  
+    (constraint hole_clearance (min 0.33mm))
+    (condition "A.Type =='Pad' && B.Type =='Track' && A.Pad_Type == 'NPTH, mechanical'"))
+
+(rule "Pad to Track Clearance"  
+    (constraint clearance (min 0.2mm))
+    (condition "A.Type =='Pad' && B.Type =='Track'"))
+
+
+#--------------------------------------------
+# Minimum trace width and spacing
+#--------------------------------------------
+(rule "Inner Layer min trace width"  
+    (layer inner)
+    (constraint track_width (min 0.127mm)))
+
+(rule "Inner Layer min trace spacing"  
+    (layer inner)
+    (constraint clearance (min 0.127mm))
+    (condition "A.Type == 'Track' && B.Type == 'Track'"))
+
+#(rule "Outer Layer min trace width - 1oz 2 Layers"  
+#    (layer outer)
+#    (constraint track_width (min 0.127mm)))
+#
+#(rule "Outer Layer min trace spacing - 1oz 2 Layers"  
+#    (layer outer)
+#    (constraint clearance (min 0.127mm))
+#    (condition "A.Type == 'Track' && B.Type == 'Track'"))
+
+(rule "Outer Layer min trace width - 1oz 4 Layers"  
+    (layer outer)
+    (constraint track_width (min 0.09mm)))
+
+(rule "Outer Layer min trace spacing - 1oz 4 Layers"  
+    (layer outer)
+    (constraint clearance (min 0.09mm))
+    (condition "A.Type == 'Track' && B.Type == 'Track'"))
+
+#(rule "Outer Layer min trace width - 2oz 4 Layers"  
+#    (layer outer)
+#    (constraint track_width (min 0.2mm)))
+#
+#(rule "Outer Layer min trace spacing - 2oz 4 Layers"  
+#    (layer outer)
+#    (constraint clearance (min 0.2mm))
+#    (condition "A.Type == 'Track' && B.Type == 'Track'"))
+
+
+#--------------------------------------------
+# BGA
+#--------------------------------------------
+#(rule "BGA Pad Dimensions - 2 Layers"
+#   (constraint hole (min 0.4mm))
+#   (condition "A.insideArea('BGA') && A.Type == 'Pad'"))
+#
+#(rule "BGA Pad Clearance - 2 Layers"
+#    (constraint clearance (min 0.127mm))
+#    (condition "A.insideArea('BGA') && A.Type =='Pad' && B.Type =='Pad' && A.Net != B.Net"))
+#
+#(rule "BGA Pad Dimensions - 4 Layers"
+#   (constraint hole (min 0.25mm))
+#   (condition "A.insideArea('BGA') && A.Type == 'Pad'"))
+#
+#(rule "BGA Pad Clearance - 4 Layers"
+#    (constraint clearance (min 0.127mm))
+#    (condition "A.insideArea('BGA') && A.Type =='Pad' && B.Type =='Pad' && A.Net != B.Net"))
+#
+
+
+#--------------------------------------------
+# Silkscreen
+#--------------------------------------------
+
+
+
+
