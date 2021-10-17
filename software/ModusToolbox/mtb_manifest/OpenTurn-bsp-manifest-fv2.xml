@@ -1,0 +1,31 @@
+<boards version="2.0">
+  <board default_location="local">
+    <id>TARGET_OpenTurn</id>
+    <category>OpenTurn</category>
+    <board_uri>https://github.com/OpenTurn/OpenTurn_PSoC</board_uri>
+    <chips>
+      <mcu>CY8C6244AZI-S4D92</mcu>
+    </chips>
+    <name>OpenTurn</name>
+    <summary>Open source Motor Controler based on Infineon PSoC 62x4 microcontroler, Infineon TLE5012 hall rotary endocer and Infineon 6EDL7141 MosFET driver.</summary>
+    <prov_capabilities>adc arduino can capsense capsense_button capsense_linear_slider cat1 comp cy8ckit_062s4 dac dma flash_256k hal i2c j2 led low_power lptimer mcu_gp memory memory_qspi multi_core nor_flash opamp psoc6 qspi rgb_led rtc smart_io spi sram_128k std_crypto switch uart usb_device usb_host openturn</prov_capabilities>
+    <description><![CDATA[
+        <div class="category">Kit Features:</div><ul>
+        <li>Delivers dual-cores, with a 150-MHz Arm Cortex-M4 as the primary application processor and a 100-MHz Arm Cortex-M0+ as the secondary processor. </li>
+        <li>256-KB Flash and 128-KB SRAM for customer application on CM4</li>
+        <li>TLE5012 hall rotary endocer</li>
+        <li>6EDL7141 3 phase smart gate driver</li>
+        <li>IAUC120N06S5L032 MosFET</li>
+        <li>3 current shunts</li>
+        <li>CAN-FD interface</li>
+        </ul>
+      ]]></description>
+    <documentation_url>https://github.com/OpenTurn/OpenTurn_PSoC/tree/master/documentation</documentation_url>
+    <versions>
+      <version tools_min_version="2.2.0" flow_version="1.0,2.0" prov_capabilities_per_version="bsp_gen2">
+        <num>Latest 1.X release</num>
+        <commit>BSP_1_0</commit>
+      </version>
+    </versions>
+  </board>
+</boards>
